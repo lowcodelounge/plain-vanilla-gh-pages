@@ -1,3 +1,5 @@
+---
+---
 # Plain Vanilla GitHub Pages README
 {{ site.description }}
 
