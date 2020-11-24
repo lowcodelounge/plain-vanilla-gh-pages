@@ -1,7 +1,5 @@
----
----
 # Plain Vanilla GitHub Pages README
-{{ site.description }}
+The purpose of this project is to make as easy as possible for less-technical people to create and host basic web pages for free on [GitHub Pages](https://pages.github.com/).
 
 ## How to use
 
@@ -10,12 +8,12 @@
 1. Go to the `Settings` tab and scroll down to the `GitHub Pages` section.
 1. Set the `Source` to `main` and press `Save`.
 
-You'll see a URL who up, but the site takes a few minutes before it's actually live.
+You'll see a URL show up, but the site takes a few minutes before it's actually live. In the meantime, try creating a page.
 
 ### Creating your first page
 1. Go to the `Code` tab.
 1. Press the `Add File` button and select `Create new file`.
-1. Give the page a title, for example, `first-page.md`. (Note the lack of spaces and .md extension.)
+1. Give the page a title, for example, `first-page.md`. (Note the lack of spaces and the inclusion of the .md extension.)
 1. Add some content using [markdown](https://guides.github.com/features/mastering-markdown/) syntax. For example, you could start with a heading and paragraph like this:
 ```
 # First page
@@ -26,7 +24,7 @@ This is my first page.
 ### Checking your page online
 1. On the Code tab, find and press the `Environments` link. (It may be in the right column.)
 1. On the next page (Deployments), press the `View deployment` button. (You should see the default homepage load.)
-1. In the address bar of the browser, add the name of your page _using the HTML extension_ and press return. For example: `first-page.html`.
+1. In the address bar of the browser, add the name of your page _using the HTML extension_ and press return. For example: `first-page.html`. (The full address will be something like this: `https://pglevy.github.io/plain-vanilla-gh-pages/first-page.html`)
 
 You should see the new page you created.
 
@@ -34,8 +32,8 @@ You should see the new page you created.
 Now that you know how to create pages, here are some other things you can do:
 - Create more pages.
 - Update `index.md` (the homepage) with your own content.
-- Add links between pages so operate like a website.
-- Copy component code snippets from the GitHub Primer design system to add more advanced functionality to your pages.
+- Add links between pages so it works like a website.
+- Copy component code snippets from the [GitHub Primer design system](https://primer.style/css/components) to add more advanced functionality to your pages.
 
 ## What to do if you're having problems
 - Try starting over with a new repository and follow the instructions again.
