@@ -1,0 +1,5 @@
+# Set a plain language title for the site.
+title: Plain Vanilla GitHub Pages
+
+# Avoid GitHub API authentication when building locally. (Not working)
+github: [metadata]
