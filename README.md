@@ -1,7 +1,7 @@
 # Plain Vanilla GitHub Pages README
 The purpose of this project is to make as easy as possible for less-technical people to create and host basic web pages for free on [GitHub Pages](https://pages.github.com/).
 
-## How to use
+## Getting started
 
 ### Copying the template and setting up publishing
 1. Press the `Use this template` button on the `Code` tab.
@@ -41,3 +41,6 @@ Now that you know how to create pages, here are some other things you can do:
 
 ## Building the running the site locally on your computer (for advanced users)
 To run the site locally, you'll need to install [Jekyll](https://jekyllrb.com/), which requires a few steps. See the [official installation instructions](https://jekyllrb.com/docs/installation/).
+
+## Credit and license
+This project was created primarly using the [GitHub Pages gem for Jekyll](https://github.com/github/pages-gem) and a slightly modified [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate). It is licensed under [The Unlicense](https://github.com/pglevy/plain-vanilla-gh-pages/blob/main/LICENSE), which allows everything and promises nothing.😎
