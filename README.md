@@ -5,7 +5,7 @@ The purpose of this project is to make as easy as possible for less-technical pe
 
 ### Copying the template and setting up publishing
 1. Press the `Use this template` button on the `Code` tab.
-1. Go to the `Settings` tab and scroll down to the `GitHub Pages` section.
+1. Go to the `Settings` tab and then go to the `Pages` settings.
 1. Set the `Source` to `main` and press `Save`.
 
 You'll see a URL show up, but the site takes a few minutes before it's actually live. In the meantime, try creating a page.
