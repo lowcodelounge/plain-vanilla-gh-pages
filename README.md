@@ -1,6 +1,8 @@
 # Plain Vanilla GitHub Pages README
 The purpose of this project is to make as easy as possible for less-technical people to create and host basic web pages for free on [GitHub Pages](https://pages.github.com/).
 
+[Check out my YouTube video on how to get started using this template](https://youtu.be/jlkHEmgQhGU)
+
 ## Getting started
 
 ### Copying the template and setting up publishing
