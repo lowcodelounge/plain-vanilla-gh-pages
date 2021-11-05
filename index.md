@@ -10,6 +10,7 @@ After creating your own copy of this template repository, add new pages as you n
 
 <div class="my-6 text-center">
 <a href="https://github.com/pglevy/plain-vanilla-gh-pages" class="btn-mktg btn-large-mktg">Get the template on GitHub</a>
+<a href="https://youtu.be/jlkHEmgQhGU" class="btn-mktg btn-outline-mktg mt-3">Watch the tutorial on YouTube</a>
 </div>
 
 ![Screenshot of "create a new repository" action](assets/img/create-repo.jpg)
