@@ -46,3 +46,5 @@ To run the site locally, you'll need to install [Jekyll](https://jekyllrb.com/),
 
 ## Credit and license
 This project was created primarily using the [GitHub Pages gem for Jekyll](https://github.com/github/pages-gem) and a slightly modified [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate). It is licensed under [The Unlicense](https://github.com/pglevy/plain-vanilla-gh-pages/blob/main/LICENSE), which allows everything and promises nothing. 😎
+
+Favicon is `Soft Ice Cream` from [Twemoji](https://twemoji.twitter.com/), licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
