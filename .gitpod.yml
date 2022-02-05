@@ -1,7 +1,7 @@
 image:
   file: Dockerfile
 tasks:
-  - init: bundle install
+  - before: bundle install
     command: bundle exec jekyll serve
 ports:
   - port: 4000
