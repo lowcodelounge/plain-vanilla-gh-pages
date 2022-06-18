@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
-<body class="p-3">
-  <main class="container-md markdown-body">
+<body class="{% if page.body-style %}{{ page.body-style }}{% else %}p-3{% endif %}">
+  <main class="{% if page.main-style %}{{ page.main-style }}{% else %}container-md markdown-body{% endif %}">
     {{ content }}
   </main>
   <script src="assets/js/main.js"></script>
