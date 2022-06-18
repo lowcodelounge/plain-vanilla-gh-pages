@@ -15,12 +15,18 @@ You'll see a URL show up, but the site takes a few minutes before it's actually 
 ### Creating your first page
 1. Go to the `Code` tab.
 1. Press the `Add File` button and select `Create new file`.
-1. Give the page a title, for example, `first-page.md`. (Note the lack of spaces and the inclusion of the .md extension.)
+1. Name the page, for example, `first-page.md`. (Note the lack of spaces and the inclusion of the .md extension.)
+1. Add a title in the front matter:
+    ```
+    ---
+    title: First Page
+    ---
+    ```
 1. Add some content using [markdown](https://guides.github.com/features/mastering-markdown/) syntax. For example, you could start with a heading and paragraph like this:
-```
-# First page
-This is my first page.
-```
+    ```
+    # First page
+    This is my first page.
+    ```
 5. Scroll down to the bottom of the page and press `Commit new file`.
 
 ### Checking your page online
@@ -36,6 +42,25 @@ Now that you know how to create pages, here are some other things you can do:
 - Update `index.md` (the homepage) with your own content.
 - Add links between pages so it works like a website.
 - Copy component code snippets from the [GitHub Primer design system](https://primer.style/css/components) to add more advanced functionality to your pages.
+
+## Default `body` and `main` styling classes
+- By default, the `body` element includes the `p-3` utility class from Primer. This adds some padding to the page on all sides.
+- The `main` element includes these two classes: `container-md` and `markdown-body`. The first one sets a maximum width for the content area and the second provides the default GitHub styling for Markdown content.
+- To override these, add these settings to the front matter of your content page: `body-style` and `main-style`.
+
+For example:
+```
+title: Home
+body-style: p-0
+main-style: container-lg
+```
+
+If you want to replace the defaults with nothing, do this:
+```
+title: My Page
+body-style: ""
+main-style: ""
+```
 
 ## What to do if you're having problems
 - Try starting over with a new repository and follow the instructions again.
