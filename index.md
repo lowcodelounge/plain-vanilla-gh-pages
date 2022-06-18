@@ -1,5 +1,4 @@
 ---
-layout: index
 title: Home
 ---
 # Plain Vanilla GitHub Pages
