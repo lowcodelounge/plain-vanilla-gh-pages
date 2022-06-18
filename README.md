@@ -39,15 +39,15 @@ Now that you know how to create pages, here are some other things you can do:
 
 ## What to do if you're having problems
 - Try starting over with a new repository and follow the instructions again.
-- If it's still not working, [create an issue in the original Plain Vanilla GitHub Pages repo](https://github.com/pglevy/plain-vanilla-gh-pages/issues), and I'll try to help.
+- If it's still not working, [create an issue in the original Plain Vanilla GitHub Pages repo](https://github.com/lowcodelounge/plain-vanilla-gh-pages/issues), and I'll try to help.
 
 ## Getting started with Gitpod
 Gitpod is a cloud-based development environment that allows you to work with code and static site compilers without having to install software on your local machine.
 
 To use Gitpod:
-1. [Create a copy](https://github.com/githubfornocoders/plain-vanilla-gh-pages/generate) of the repo template.
+1. [Create a copy](https://github.com/lowcodelounge/plain-vanilla-gh-pages/generate) of the repo template.
 2. [Log into Gitpod](https://gitpod.io/login/) using your GitHub account.
-3. [Open a new workspace using this Gitpod link](https://gitpod.io/#https://github.com/githubfornocoders/plain-vanilla-gh-pages/tree/main).
+3. [Open a new workspace using this Gitpod link](https://gitpod.io/#https://github.com/lowcodelounge/plain-vanilla-gh-pages/tree/main).
 
 What happens next:
 - An instance of the VS Code text editor opens in your browser.
@@ -60,6 +60,6 @@ What happens next:
 To run the site locally, you'll need to install [Jekyll](https://jekyllrb.com/), which requires a few steps. See the [official installation instructions](https://jekyllrb.com/docs/installation/).
 
 ## Credit and license
-This project was created primarily using the [GitHub Pages gem for Jekyll](https://github.com/github/pages-gem) and a slightly modified [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate). It is licensed under [The Unlicense](https://github.com/pglevy/plain-vanilla-gh-pages/blob/main/LICENSE), which allows everything and promises nothing. 😎
+This project was created using the [GitHub Pages gem for Jekyll](https://github.com/github/pages-gem). It is licensed under [The Unlicense](https://github.com/pglevy/plain-vanilla-gh-pages/blob/main/LICENSE), which allows everything and promises nothing. 😎
 
 Favicon is `Soft Ice Cream` from [Twemoji](https://twemoji.twitter.com/), licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
