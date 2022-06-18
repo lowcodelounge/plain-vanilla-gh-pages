@@ -62,6 +62,19 @@ body-style: ""
 main-style: ""
 ```
 
+## Local CSS
+If you want to work locally and/or offline, you can use a local copy of the Primer CSS instead of referencing the hosted version. Note the local copy may not be the latest version because it will need to kept up-to-date manually.
+
+To switch to local CSS, replace this line in `_layouts/default.html`:
+```
+<link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
+```
+
+with this:
+```
+<link rel="stylesheet" href="assets/css/primer.css">
+```
+
 ## What to do if you're having problems
 - Try starting over with a new repository and follow the instructions again.
 - If it's still not working, [create an issue in the original Plain Vanilla GitHub Pages repo](https://github.com/lowcodelounge/plain-vanilla-gh-pages/issues), and I'll try to help.
