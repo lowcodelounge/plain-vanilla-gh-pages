@@ -7,5 +7,5 @@ description: Free, easy, low-tech website template using GitHub Pages
 # Set the language for the site. Used for "html lang." Default is English.
 lang: en
 
-# Avoid GitHub API authentication when building locally. (Not working)
+# Avoid GitHub API authentication when building locally.
 github: [metadata]
