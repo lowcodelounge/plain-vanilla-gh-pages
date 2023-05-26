@@ -62,17 +62,17 @@ body-style: ""
 main-style: ""
 ```
 
-## Local CSS
-If you want to work locally and/or offline, you can use a local copy of the Primer CSS instead of referencing the hosted version. Note the local copy may not be the latest version because it will need to kept up-to-date manually.
+## GitHub Primer CSS framework
+This projects uses a local copy of the Primer CSS to enable work locally and/or offline. Note this copy may not be the latest version because it needs to be kept up-to-date manually. Alternatively, you can use the hosted version, which always references the current version.
 
-To switch to local CSS, replace this line in `_layouts/default.html`:
+To switch to hosted CSS, replace this line in `_layouts/default.html`:
 ```
-<link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
+<link rel="stylesheet" href="assets/css/primer.css">
 ```
 
 with this:
 ```
-<link rel="stylesheet" href="assets/css/primer.css">
+<link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
 ```
 
 ## What to do if you're having problems
