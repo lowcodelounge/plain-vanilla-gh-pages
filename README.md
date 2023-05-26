@@ -79,24 +79,6 @@ with this:
 - Try starting over with a new repository and follow the instructions again.
 - If it's still not working, [create an issue in the original Plain Vanilla GitHub Pages repo](https://github.com/lowcodelounge/plain-vanilla-gh-pages/issues), and I'll try to help.
 
-## Getting started with Gitpod
-Gitpod is a cloud-based development environment that allows you to work with code and static site compilers without having to install software on your local machine.
-
-To use Gitpod:
-1. [Create a copy](https://github.com/lowcodelounge/plain-vanilla-gh-pages/generate) of the repo template.
-2. [Log into Gitpod](https://gitpod.io/login/) using your GitHub account.
-3. [Open a new workspace using this Gitpod link](https://gitpod.io/#https://github.com/lowcodelounge/plain-vanilla-gh-pages/tree/main).
-
-What happens next:
-- An instance of the VS Code text editor opens in your browser.
-- You may see some things happening in the Terminal panel.
-- When it's finished, you'll see a message that says `Server running... press ctrl-c to stop.` in the Terminal panel.
-- Your browser may block the pop-up that tries to open.
-- If you don't see the live site, command-click the URL on this line in the Terminal panel: `Server address: http://127.0.0.1:4000`
-
-## Building the running the site locally on your computer (for advanced users)
-To run the site locally, you'll need to install [Jekyll](https://jekyllrb.com/), which requires a few steps. See the [official installation instructions](https://jekyllrb.com/docs/installation/).
-
 ## Credit and license
 This project was created using the [GitHub Pages gem for Jekyll](https://github.com/github/pages-gem). It is licensed under [The Unlicense](https://github.com/pglevy/plain-vanilla-gh-pages/blob/main/LICENSE), which allows everything and promises nothing. 😎
 
