@@ -2,29 +2,23 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
 	"name": "Jekyll",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/jekyll:1-bullseye",
-
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-
+	// Commands
+	"waitFor": "onCreateCommand",
+	"updateContentCommand": "bundle install",
+	"postAttachCommand": {
+		"server": "bundle exec jekyll serve"
+	},
 	// Ports
 	"portsAttributes": {
 		"4000": {
-		  "label": "Preview",
-		  "onAutoForward": "openBrowser"
+			"label": "Preview",
+			"onAutoForward": "openBrowser"
 		}
-	  },
-	"forwardPorts": [4000],
-
-	// Lifecycle scripts
-	"waitFor": "onCreateCommand",
-	"updateContentCommand": "bundle install",
-	"postStartCommand": "bundle exec jekyll serve"
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	},
+	"forwardPorts": [
+		4000
+	]
 }
