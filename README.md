@@ -42,6 +42,7 @@ Now that you know how to create pages, here are some other things you can do:
 - Update `index.md` (the homepage) with your own content.
 - Add links between pages so it works like a website.
 - Copy component code snippets from the [GitHub Primer design system](https://primer.style/css/components) to add more advanced functionality to your pages.
+- Customize your site language, title, and description in the `metadata.yml` file located in the `_data` folder.
 
 ## Default `body` and `main` styling classes
 - By default, the `body` element includes the `p-3` utility class from Primer. This adds some padding to the page on all sides.
