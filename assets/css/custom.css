@@ -1,1 +1,174 @@
-/* Add CSS rules to override Primer */
+/* System font stacks (https://systemfontstack.com/) */
+
+:root {
+    --sans-serif-stack: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  
+  --serif-stack: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  
+  --mono-stack: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;  
+  }
+  
+  /* Default values if not custom settings are added to the text container */
+  
+  [data-atypesetter] {
+    --heading-stack: var(--sans-serif-stack);
+    --body-stack: var(--sans-serif-stack);
+    --size: 1.21rem;
+    --measure: 72ex;
+    --height: 1.5;
+    --size-scale: 1.25;
+    --height-scale: 1.09;
+  }
+  
+  
+  /* Override default values by adding custom CSS properties to text container, for example `style="--size: 1.2rem;" */
+  
+  [data-atypesetter] {
+  /*   --font-family-heading: var(--heading-stack);
+    --font-family-body: var(--body-stack); */
+    --font-family-heading: inherit;
+    --font-family-body: inherit;
+    --base-font-size: var(--size);
+    --base-measure: var(--measure);
+    --base-line-height: var(--height);
+    --font-size-scale: var(--size-scale);
+    --line-height-scale: var(--height-scale);
+  }
+  
+
+  /* Set the font, size, measure, and line height for the text container. */
+  
+  [data-atypesetter] {
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    max-width: var(--base-measure);
+    line-height: var(--base-line-height);
+    hyphens: auto;
+  }
+  
+  
+  /* Font size, line height, and measure for body content elements and headings 4 and below */
+  
+  [data-atypesetter] p,
+  [data-atypesetter] h4,
+  [data-atypesetter] h5,
+  [data-atypesetter] h6,
+  [data-atypesetter] li,
+  [data-atypesetter] blockquote,
+  [data-atypesetter] dl,
+  [data-atypesetter] pre,
+  [data-atypesetter] code,
+  [data-atypesetter] kbd,
+  [data-atypesetter] samp {
+    font-family: var(--body-stack);
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    max-width: var(--base-measure);
+  }
+  
+  
+  /* Prevent small from getting too small */
+  
+  [data-atypesetter] small {
+    font-size: clamp(calc(var(--base-font-size) * 0.80), calc(var(--base-font-size) / var(--font-size-scale)), var(--base-font-size));
+    line-height: calc(var(--base-line-height) * var(--line-height-scale));
+  }
+  
+  
+  /* Optional “lead” sizing for first paragraph */
+  /* To opt out, add `data-atypesetter-nolead` to text container */
+  
+  [data-atypesetter] p:first-of-type {
+    font-size: calc(var(--base-font-size) * var(--font-size-scale));
+    line-height: calc(var(--base-line-height) / var(--line-height-scale));
+    font-weight: 300;
+    hyphens: none;
+  }
+  
+  [data-atypesetter-nolead] p:first-of-type {
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+  }
+  
+  
+  /* Font size and line height for main headings */
+  
+  [data-atypesetter] h1 {
+    font-family: var(--font-family-heading);
+    font-size: calc(var(--base-font-size) * var(--font-size-scale) * var(--font-size-scale) * var(--font-size-scale));
+    line-height: calc(var(--base-line-height) / var(--line-height-scale) / var(--line-height-scale) / var(--line-height-scale));
+  }
+  
+  [data-atypesetter] h2 {
+    font-family: var(--font-family-heading);
+    font-size: calc(var(--base-font-size) * var(--font-size-scale) * var(--font-size-scale));
+    line-height: calc(var(--base-line-height) / var(--line-height-scale) / var(--line-height-scale));
+  }
+  
+  [data-atypesetter] h3 {
+    font-family: var(--font-family-heading);
+    font-size: calc(var(--base-font-size) * var(--font-size-scale));
+    line-height: calc(var(--base-line-height) / var(--line-height-scale));
+  }
+  
+  
+  /* Margins for most things and hyphen removal for headings */
+  
+  [data-atypesetter] p,
+  [data-atypesetter] ul,
+  [data-atypesetter] ol,
+  [data-atypesetter] dl {
+    margin: 0 0 var(--base-font-size);
+  }
+  
+  [data-atypesetter] blockquote {
+    margin-top: 0;
+    margin-bottom: var(--base-font-size);
+  }
+  
+  [data-atypesetter] li {
+    margin: 0 0 calc(var(--base-font-size) / 2);
+  }
+  
+  [data-atypesetter] dd {
+    margin-bottom: calc(var(--base-font-size) / 2);
+  }
+  
+  [data-atypesetter] h1 {
+    margin-top: 0;
+    margin-bottom: calc(var(--base-font-size) / 2);
+    hyphens: none;
+  }
+  
+  [data-atypesetter] h2,
+  [data-atypesetter] h3,
+  [data-atypesetter] h4,
+  [data-atypesetter] h5,
+  [data-atypesetter] h6 {
+    margin-top: calc(var(--base-font-size) * 2);
+    margin-bottom: calc(var(--base-font-size) / 2);
+    hyphens: none;
+  }
+  
+  
+  /* List padding */
+  [data-atypesetter] ul,
+  [data-atypesetter] ol {
+    padding-left: calc(var(--base-font-size) * 2);
+  }
+  
+  
+  /* Responsive styling for larger screens by changing the scale. This keeps the same paragraph text size but allows for smaller headings on small screens and larger headings on large screens. */
+  
+  @media (min-width: 1024px) {
+      [data-atypesetter] {
+        --font-size-scale: 1.333;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+      [data-atypesetter] {
+        --font-size-scale: 1.414;
+        --base-measure: 88ex;
+    }
+  }

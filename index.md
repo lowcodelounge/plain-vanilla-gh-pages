@@ -5,6 +5,7 @@ title: Home
 # Soft Serve Websites 🍦
 
 The purpose of this project is to make it as easy as possible for low-tech people like me to create and host basic web pages for free on [GitHub Pages](https://pages.github.com/).
+{: .lead}
 
 ## How it works
 
