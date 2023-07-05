@@ -1,11 +1,13 @@
 /* System font stacks (https://systemfontstack.com/) */
 
 :root {
-    --sans-serif-stack: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --sans-serif-stack: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   
   --serif-stack: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   
-  --mono-stack: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;  
+  --mono-stack: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
+  
+  --bs-btn-bg: #6f42c1 !important;
   }
   
   /* Default values if not custom settings are added to the text container */
@@ -13,9 +15,9 @@
   [data-atypesetter] {
     --heading-stack: var(--sans-serif-stack);
     --body-stack: var(--sans-serif-stack);
-    --size: 1.21rem;
+    --size: 1.15rem;
     --measure: 72ex;
-    --height: 1.5;
+    --height: 1.414;
     --size-scale: 1.25;
     --height-scale: 1.09;
   }
@@ -172,3 +174,9 @@
         --base-measure: 88ex;
     }
   }
+
+@media (prefers-color-scheme: dark) {
+  .bg-white { 
+    background-color: #24292f !important; 
+  }
+}

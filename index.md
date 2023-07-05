@@ -1,11 +1,15 @@
 ---
 title: Home
+body-style: bg-primary-subtle
+main-style: container col-lg-6 offset-lg-3 p-5 bg-white
 ---
 
 # Soft Serve Websites 🍦
 
-The purpose of this project is to make it as easy as possible for low-tech people like me to create and host basic web pages for free on [GitHub Pages](https://pages.github.com/).
+Permissionless web publishing… your content on your terms.
 {: .lead}
+
+![ice cream](assets/img/ice-cream-solid.svg)
 
 ## How it works
 
