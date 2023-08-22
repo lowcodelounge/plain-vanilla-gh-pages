@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# Plain Vanilla GitHub Pages
+# Soft Serve Websites 🍦
 
 The purpose of this project is to make it as easy as possible for low-tech people like me to create and host basic web pages for free on [GitHub Pages](https://pages.github.com/).
 
@@ -12,10 +12,13 @@ After creating your own copy of this template repository, add new pages as you n
 
 If you want to go beyond Markdown and add more interactive elements (like button links for navigation components), you can copy and paste code snippets from [GitHub Primer components](https://primer.style/css/components) to your pages.
 
-<div class="my-6 text-center">
-<a href="https://github.com/lowcodelounge/plain-vanilla-gh-pages" class="btn-mktg btn-large-mktg">Get the template on GitHub</a>
-  <br>
-<a href="https://youtu.be/jlkHEmgQhGU" class="btn-mktg btn-outline-mktg mt-3">Watch the tutorial on YouTube</a>
-</div>
+<p class="text-center">
+  <a href="https://github.com/lowcodelounge/plain-vanilla-gh-pages" class="btn btn-primary btn-lg">Get the template on GitHub</a>
+</p>
+<p class="text-center">
+  <a href="https://youtu.be/jlkHEmgQhGU" class="btn btn-secondary">Watch the tutorial on YouTube</a>
+</p>
 
-![Screenshot of "create a new repository" action](assets/img/create-repo.jpg)
+<div class="card shadow-lg">
+  <img src="assets/img/create-repo.jpg" alt="Screenshot of create a new repository action" class="object-fit-cover border rounded">
+</div>

@@ -1,23 +1,26 @@
 <!doctype html>
-<html lang="{{ site.data.metadata.lang | default: 'en' }}" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+<html lang="{{ site.data.metadata.lang | default: 'en' }}" data-bs-theme="dark">
 
 <head>
   <meta charset="utf-8">
-  <title>{{ site.data.metadata.title | default: 'Plain Vanilla GitHub Pages' }}</title>
-  <meta name="description" content="{{ site.data.metadata.description | default: 'Free, easy, low-tech website template using GitHub Pages' }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.data.metadata.description | default: 'Free, easy, low-tech website template using GitHub Pages' }}">
+  <title>{{ site.data.metadata.title | default: 'Plain Vanilla GitHub Pages' }}</title>
 
   <link rel="icon" href="favicon.ico" sizes="any">
 
-  <link rel="stylesheet" href="assets/css/primer.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
-<body class="{% if page.body-style %}{{ page.body-style }}{% else %}p-3{% endif %}">
-  <main class="{% if page.main-style %}{{ page.main-style }}{% else %}container-md markdown-body{% endif %}">
-    {{ content }}
+<body class="{{ page.body-style | default: 'p-4' }}">
+  <main class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          {{ content }}
+        </div>
   </main>
-  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
