@@ -41,39 +41,40 @@ Now that you know how to create pages, here are some other things you can do:
 - Create more pages.
 - Update `index.md` (the homepage) with your own content.
 - Add links between pages so it works like a website.
-- Copy component code snippets from the [GitHub Primer design system](https://primer.style/css/components) to add more advanced functionality to your pages.
+- Copy component code snippets from the [Pico CSS Framework](https://picocss.com/docs) to add more advanced functionality to your pages.
 - Customize your site language, title, and description in the `metadata.yml` file located in the `_data` folder.
 
 ## Default `body` and `main` styling classes
-- By default, the `body` element includes the `p-3` utility class from Primer. This adds some padding to the page on all sides.
-- The `main` element includes these two classes: `container-md` and `markdown-body`. The first one sets a maximum width for the content area and the second provides the default GitHub styling for Markdown content.
+- There are no classes on the `body` element by default.
+- The `main` element includes the `container` class. This sets a maximum width for the content area.
 - To override these, add these settings to the front matter of your content page: `body-style` and `main-style`.
 
 For example:
 ```
 title: Home
-body-style: p-0
-main-style: container-lg
+main-style: container-fluid
 ```
 
-If you want to replace the defaults with nothing, do this:
+If you want to replace the default with nothing, do this:
 ```
 title: My Page
-body-style: ""
 main-style: ""
 ```
 
-## GitHub Primer CSS framework
-This projects uses a local copy of the Primer CSS to enable work locally and/or offline. Note this copy may not be the latest version because it needs to be kept up-to-date manually. Alternatively, you can use the hosted version, which always references the current version.
+## Mixing HTML elements and Markdown in your .md pages
+To use markdown inside of traditional HTML elements, add `markdown="1"` as a parameter to the HTML element. For example:
 
-To switch to hosted CSS, replace this line in `_layouts/default.html`:
 ```
-<link rel="stylesheet" href="assets/css/primer.css">
+<section markdown="1">
+  ![Screenshot of "create a new repository" action](assets/img/create-repo.jpg)
+</section>
 ```
 
-with this:
+## Working with local CSS
+By default, the site will load the Pico CSS from a hosted site (CDN). If you're working offline or don't have access to this for some reason, you can use a copy of the CSS file included in the repo. In `_config.yml`, change `useLocalCss` to `true`.
+
 ```
-<link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
+useLocalCss: true
 ```
 
 ## Work with site preview using the GitHub Codespaces remote dev environment

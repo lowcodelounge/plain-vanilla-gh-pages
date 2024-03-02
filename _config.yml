@@ -1,2 +1,5 @@
 # Avoid GitHub API authentication when building locally.
 github: [metadata]
+
+# Use local CSS if working offline without access to CDN.
+useLocalCss: false
